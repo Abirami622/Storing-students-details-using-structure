@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+int main()
+{
+   
+    struct students
+    {
+        int roll_no;
+        char name[10];
+        
+    }s[10];
+    struct mark
+    {
+        int mark;
+        char sub[10];
+    };
+    struct mark m[10];
+    for(int i=0; i<=1; i++)
+    {
+    scanf("%d %s %d %s", &s[i].roll_no, s[i].name, &m[i].mark, m[i].sub);
+    
+    }
+    for(int i=0; i<=1; i++)
+    {
+    printf("%d %s %d %s\n", s[i].roll_no, s[i].name, m[i].mark, m[i].sub);
+    }
+    
+    return 0;
+}
